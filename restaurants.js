@@ -29,39 +29,6 @@
    ============================================================ */
 
 const RESTAURANTS = [
-  {
-    name: "Zingerman's Delicatessen",
-    tier: "good",
-    instagramUrl: "https://www.instagram.com/reel/EXAMPLE1/",
-    note: "The #8 Reuben is a religious experience.",
-  },
-  {
-    name: "Miss Kim",
-    tier: "good",
-    instagramUrl: "https://www.instagram.com/reel/EXAMPLE2/",
-    note: "Tteokbokki that slaps every single time.",
-  },
-  {
-    name: "Frita Batidos",
-    tier: "good",
-    instagramUrl: "",
-    note: "Chorizo frita + a batido. No further questions.",
-  },
-  {
-    name: "NeoPapalis",
-    tier: "mid",
-    instagramUrl: "https://www.instagram.com/reel/EXAMPLE4/",
-    note: "Solid pizza, but we've had better crust.",
-  },
-  {
-    name: "Panchero's",
-    tier: "mid",
-    // no instagramUrl and no note — cards render fine without them
-  },
-  {
-    name: "Sketchy Gas Station Sushi",
-    tier: "bad",
-    instagramUrl: "",
-    note: "Teddy is still recovering. 0/10.",
-  },
+  // Add the first restaurant here! (the "coming soon" banner
+  // disappears automatically once the list has an entry)
 ];

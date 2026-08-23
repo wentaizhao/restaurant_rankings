@@ -239,6 +239,33 @@ body {
   .filter-btn { transition: transform 0.12s ease, box-shadow 0.12s ease; }
 }
 
+/* ---------- coming soon banner (auto-hides once list has entries) ---------- */
+
+.coming-soon {
+  text-align: center;
+  padding: 36px 20px;
+  background: #fff;
+  border: var(--outline) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 5px 5px 0 var(--ink);
+  transform: rotate(-1deg);
+}
+
+.coming-soon-title {
+  margin: 0 0 8px;
+  font-family: var(--display-font);
+  font-size: 2rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 0 var(--maize);
+}
+
+.coming-soon-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #3b5169;
+}
+
 /* ---------- empty state & footer ---------- */
 
 .empty-state {

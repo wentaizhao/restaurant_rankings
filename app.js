@@ -9,6 +9,7 @@
   const list = document.getElementById("ranking-list");
   const countBadge = document.getElementById("count-badge");
   const emptyState = document.getElementById("empty-state");
+  const comingSoon = document.getElementById("coming-soon");
   const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
 
   // Entries must have a name to be displayed. Order in the file IS the
@@ -82,7 +83,10 @@
     list.textContent = "";
     visible.forEach(function (r) { list.append(buildCard(r)); });
 
-    emptyState.hidden = visible.length !== 0;
+    // No rankings at all yet → show the coming-soon banner instead of
+    // the per-tier empty state. Disappears once the first entry exists.
+    comingSoon.hidden = restaurants.length !== 0;
+    emptyState.hidden = visible.length !== 0 || restaurants.length === 0;
     countBadge.textContent = activeTier === "all"
       ? restaurants.length + " ranked"
       : visible.length + " of " + restaurants.length;
