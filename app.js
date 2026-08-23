@@ -11,16 +11,18 @@
   const emptyState = document.getElementById("empty-state");
   const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
 
-  // Entries must have a name and a numeric rank to be displayed.
+  // Entries must have a name to be displayed. Order in the file IS the
+  // ranking: rank numbers are assigned from position (first = 1).
   const data = typeof RESTAURANTS !== "undefined" && Array.isArray(RESTAURANTS) ? RESTAURANTS : [];
   const restaurants = data
     .filter(function (r) {
-      const valid = r && typeof r.name === "string" && r.name.trim() !== "" && typeof r.rank === "number";
+      const valid = r && typeof r.name === "string" && r.name.trim() !== "";
       if (!valid) console.warn("Skipping invalid restaurant entry:", r);
       return valid;
     })
-    .slice()
-    .sort(function (a, b) { return a.rank - b.rank; });
+    .map(function (r, i) {
+      return Object.assign({}, r, { rank: i + 1 });
+    });
 
   let activeTier = "all";
 

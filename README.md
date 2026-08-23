@@ -4,12 +4,13 @@ A single-page static site ranking every restaurant in Ann Arbor, as judged by tw
 
 ## How to add a restaurant
 
-Everything lives in **`restaurants.js`**. Open it, copy any existing entry, paste it anywhere inside the `RESTAURANTS = [ ... ]` list, and edit the values:
+Everything lives in **`restaurants.js`**. **The order of the list is the ranking** — the first entry is #1. Rank numbers are calculated automatically, so never type them yourself.
+
+Copy any existing entry and paste it at the position it deserves (pasting between #2 and #3 makes it the new #3; everything below renumbers on its own):
 
 ```js
 {
   name: "New Spot",                                     // required
-  rank: 3,                                              // required — 1 is best
   tier: "good",                                         // required — "good", "mid", or "bad"
   instagramUrl: "https://www.instagram.com/reel/XXXX/", // the review video — tapping the card opens it
   note: "One-line hot take",                            // optional
@@ -23,14 +24,12 @@ Save the file and reload the page. Done.
 | Field          | Required | What it is                                              |
 | -------------- | -------- | ------------------------------------------------------- |
 | `name`         | ✅       | Restaurant name shown on the card                        |
-| `rank`         | ✅       | Position in the list; `1` is the best. Keep ranks unique |
 | `tier`         | ✅       | Exactly `"good"`, `"mid"`, or `"bad"` (lowercase)        |
 | `instagramUrl` | —        | Review video link; tapping the card opens it in a new tab |
 | `note`         | —        | Short take shown under the name                          |
 
 **Tips**
-- The file's order doesn't matter — the site sorts by `rank` automatically.
-- Inserting a new #3? Bump the old 3, 4, 5… down by one so ranks stay unique.
+- The list order is the ranking — first entry is #1. To move a restaurant, cut its `{ ... },` block and paste it at the new spot.
 - Watch the trailing comma after each `},` — the most common typo.
 - If the page suddenly shows nothing, you probably have a syntax error in `restaurants.js` (open the browser console to check).
 
