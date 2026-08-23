@@ -11,7 +11,7 @@ Copy any existing entry and paste it at the position it deserves (pasting betwee
 ```js
 {
   name: "New Spot",                                     // required
-  tier: "good",                                         // required — "good", "mid", or "bad"
+  tier: "tuff",                                         // required — "tuff", "mid", or "fade"
   instagramUrl: "https://www.instagram.com/reel/XXXX/", // the review video — tapping the card opens it
   note: "One-line hot take",                            // optional
 },
@@ -24,7 +24,7 @@ Save the file and reload the page. Done.
 | Field          | Required | What it is                                              |
 | -------------- | -------- | ------------------------------------------------------- |
 | `name`         | ✅       | Restaurant name shown on the card                        |
-| `tier`         | ✅       | Exactly `"good"`, `"mid"`, or `"bad"` (lowercase)        |
+| `tier`         | ✅       | Exactly `"tuff"`, `"mid"`, or `"fade"` (lowercase)       |
 | `instagramUrl` | —        | Review video link; tapping the card opens it in a new tab |
 | `note`         | —        | Short take shown under the name                          |
 

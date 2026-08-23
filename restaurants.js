@@ -16,7 +16,7 @@
 
    {
      name: "Restaurant Name",                        // REQUIRED — shown on the card
-     tier: "good",                                   // REQUIRED — exactly one of: "good", "mid", "bad"
+     tier: "tuff",                                   // REQUIRED — exactly one of: "tuff", "mid", "fade"
      instagramUrl: "https://www.instagram.com/reel/XXXX/", // link to the review video —
                                                      //   tapping the card opens it.
      note: "One-line hot take goes here",            // OPTIONAL — short take shown under the name.

@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  const TIERS = { good: "GOOD", mid: "MID", bad: "BAD" };
+  const TIERS = { tuff: "TUFF", mid: "MID", fade: "FADE" };
 
   const list = document.getElementById("ranking-list");
   const countBadge = document.getElementById("count-badge");

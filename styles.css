@@ -6,17 +6,17 @@
   --dot: #ffe490;               /* background dot pattern — soft maize yellow */
   --maize: #ffcb05;             /* Michigan maize accent */
 
-  --good: #58c264;              /* card tint green */
-  --good-deep: #1e7d3a;         /* badge green (AA contrast w/ white text) */
-  --good-tint: #e2f6e4;
+  --tuff: #58c264;              /* card tint green */
+  --tuff-deep: #1e7d3a;         /* badge green (AA contrast w/ white text) */
+  --tuff-tint: #e2f6e4;
 
   --mid: #ffd23f;               /* card tint yellow */
   --mid-deep: #ffce31;          /* badge yellow (dark text) */
   --mid-tint: #fff3cc;
 
-  --bad: #f2545b;               /* card tint red */
-  --bad-deep: #c22f35;          /* badge red (AA contrast w/ white text) */
-  --bad-tint: #ffe0e1;
+  --fade: #f2545b;               /* card tint red */
+  --fade-deep: #c22f35;          /* badge red (AA contrast w/ white text) */
+  --fade-tint: #ffe0e1;
 
   --neutral-deep: #6b6156;
   --neutral-tint: #efe8de;
@@ -116,9 +116,9 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-.filter-btn--good { background: var(--good-tint); }
+.filter-btn--tuff { background: var(--tuff-tint); }
 .filter-btn--mid  { background: var(--mid-tint); }
-.filter-btn--bad  { background: var(--bad-tint); }
+.filter-btn--fade  { background: var(--fade-tint); }
 
 .filter-btn[aria-pressed="true"] {
   background: var(--ink);
@@ -155,9 +155,9 @@ body {
   box-shadow: 5px 5px 0 var(--ink);
 }
 
-.card--good { background: var(--good-tint); }
+.card--tuff { background: var(--tuff-tint); }
 .card--mid  { background: var(--mid-tint); }
-.card--bad  { background: var(--bad-tint); }
+.card--fade  { background: var(--fade-tint); }
 .card--unranked { background: var(--neutral-tint); }
 
 .card-rank {
@@ -177,9 +177,9 @@ body {
 /* smaller digits so triple-digit ranks fit inside the same circle */
 .card-rank--sm { font-size: 1rem; letter-spacing: -0.5px; }
 
-.card--good .card-rank { background: var(--good); }
+.card--tuff .card-rank { background: var(--tuff); }
 .card--mid  .card-rank { background: var(--mid); }
-.card--bad  .card-rank { background: var(--bad); }
+.card--fade  .card-rank { background: var(--fade); }
 
 .card-body { flex: 1 1 auto; min-width: 0; }
 
