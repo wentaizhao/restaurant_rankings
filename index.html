@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The A² Restaurant Rankings</title>
+  <meta name="description" content="Every restaurant in Ann Arbor, ranked by two friends who take this way too seriously.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="site-header">
+      <h1 class="site-title">The A&sup2; Restaurant Rankings</h1>
+      <p class="site-subtitle">by Wentai &amp; Teddy</p>
+      <p class="count-badge" id="count-badge" aria-live="polite">0 ranked</p>
+    </header>
+
+    <nav class="filters" aria-label="Filter by tier">
+      <button type="button" class="filter-btn" data-tier="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn filter-btn--good" data-tier="good" aria-pressed="false">Good</button>
+      <button type="button" class="filter-btn filter-btn--mid" data-tier="mid" aria-pressed="false">Mid</button>
+      <button type="button" class="filter-btn filter-btn--bad" data-tier="bad" aria-pressed="false">Bad</button>
+    </nav>
+
+    <main>
+      <ol class="ranking-list" id="ranking-list"></ol>
+      <p class="empty-state" id="empty-state" hidden>Nothing in this tier yet… lucky Ann Arbor 🤷</p>
+    </main>
+
+    <footer class="site-footer">
+      <p>made with strong opinions &amp; full stomachs</p>
+    </footer>
+
+  </div>
+
+  <script src="restaurants.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

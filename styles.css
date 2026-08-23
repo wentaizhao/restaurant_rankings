@@ -1,0 +1,266 @@
+/* ========== Ann Arbor Restaurant Rankings — sticker-book styles ========== */
+
+:root {
+  --ink: #00274c;               /* dark outline / text color — Michigan blue */
+  --paper: #fdfbf5;             /* off-white page background */
+  --dot: #ffe490;               /* background dot pattern — soft maize yellow */
+  --maize: #ffcb05;             /* Michigan maize accent */
+
+  --good: #58c264;              /* card tint green */
+  --good-deep: #1e7d3a;         /* badge green (AA contrast w/ white text) */
+  --good-tint: #e2f6e4;
+
+  --mid: #ffd23f;               /* card tint yellow */
+  --mid-deep: #ffce31;          /* badge yellow (dark text) */
+  --mid-tint: #fff3cc;
+
+  --bad: #f2545b;               /* card tint red */
+  --bad-deep: #c22f35;          /* badge red (AA contrast w/ white text) */
+  --bad-tint: #ffe0e1;
+
+  --neutral-deep: #6b6156;
+  --neutral-tint: #efe8de;
+
+  --radius: 20px;
+  --outline: 3px;
+  --display-font: "Lilita One", "Arial Rounded MT Bold", "Avenir Next", sans-serif;
+  --body-font: "Nunito", -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { overflow-x: hidden; }
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  overflow-x: hidden;
+  background-color: var(--paper);
+  background-image: radial-gradient(var(--dot) 2px, transparent 2.5px);
+  background-size: 26px 26px;
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+  padding-top: max(24px, env(safe-area-inset-top));
+  padding-bottom: max(40px, env(safe-area-inset-bottom));
+}
+
+/* ---------- header ---------- */
+
+.site-header { text-align: center; margin-bottom: 20px; }
+
+.site-title {
+  font-family: var(--display-font);
+  font-weight: 400;
+  font-size: clamp(2rem, 9vw, 3rem);
+  line-height: 1.05;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+  text-shadow: 3px 3px 0 var(--maize);
+  transform: rotate(-1.2deg);
+}
+
+.site-subtitle {
+  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3b5169;
+}
+
+.count-badge {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 16px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  background: #fff;
+  border: var(--outline) solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: rotate(1deg);
+}
+
+/* ---------- filter buttons ---------- */
+
+.filters {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.filter-btn {
+  min-height: 44px;
+  min-width: 64px;
+  padding: 8px 18px;
+  font-family: var(--display-font);
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  color: var(--ink);
+  background: #fff;
+  border: var(--outline) solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--ink);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.filter-btn--good { background: var(--good-tint); }
+.filter-btn--mid  { background: var(--mid-tint); }
+.filter-btn--bad  { background: var(--bad-tint); }
+
+.filter-btn[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 1px 1px 0 var(--ink);
+  transform: translate(2px, 2px);
+}
+
+.filter-btn:active {
+  box-shadow: 0 0 0 var(--ink);
+  transform: translate(3px, 3px);
+}
+
+/* ---------- ranking cards ---------- */
+
+.ranking-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: #fff;
+  border: var(--outline) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.card--good { background: var(--good-tint); }
+.card--mid  { background: var(--mid-tint); }
+.card--bad  { background: var(--bad-tint); }
+.card--unranked { background: var(--neutral-tint); }
+
+.card-rank {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  font-family: var(--display-font);
+  font-size: 1.5rem;
+  background: #fff;
+  border: var(--outline) solid var(--ink);
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.card--good .card-rank { background: var(--good); }
+.card--mid  .card-rank { background: var(--mid); }
+.card--bad  .card-rank { background: var(--bad); }
+
+.card-body { flex: 1 1 auto; min-width: 0; }
+
+.card-name {
+  margin: 0;
+  font-family: var(--display-font);
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.card-note {
+  margin: 6px 0 0;
+  font-style: italic;
+  font-weight: 400;
+  color: #33475e;
+}
+
+/* Invisible full-card link: tapping the card opens the review video. */
+.card-cover {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card--tappable { cursor: pointer; }
+
+/* Visually hidden but read by screen readers (tier labels). */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- wobble & motion (skipped for reduced-motion users) ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease; }
+  .card:nth-child(odd)  { transform: rotate(-0.7deg); }
+  .card:nth-child(even) { transform: rotate(0.7deg); }
+
+  .card:hover { transform: rotate(0deg) scale(1.01); }
+  .card:active {
+    transform: rotate(0deg) scale(0.98);
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+
+  .filter-btn { transition: transform 0.12s ease, box-shadow 0.12s ease; }
+}
+
+/* ---------- empty state & footer ---------- */
+
+.empty-state {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 32px 16px;
+  border: var(--outline) dashed var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.site-footer {
+  margin-top: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #627892;
+}
+
+/* ---------- larger screens ---------- */
+
+@media (min-width: 700px) {
+  body { font-size: 17px; }
+  .page { padding-top: 48px; }
+  .card { padding: 20px; gap: 18px; }
+  .card-name { font-size: 1.5rem; }
+}
