@@ -32,7 +32,7 @@
     item.className = "card card--" + tier;
 
     const rankChip = document.createElement("span");
-    rankChip.className = "card-rank";
+    rankChip.className = "card-rank" + (r.rank > 99 ? " card-rank--sm" : "");
     rankChip.textContent = r.rank;
     rankChip.setAttribute("aria-label", "Rank " + r.rank);
 
