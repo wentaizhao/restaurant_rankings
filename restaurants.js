@@ -29,6 +29,10 @@
    ============================================================ */
 
 const RESTAURANTS = [
-  // Add the first restaurant here! (the "coming soon" banner
-  // disappears automatically once the list has an entry)
+  {
+    name: "No Thai",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DcpL3pXS2Oa/?utm_source=ig_web_copy_link&igsi=NTc4MTIwNjQ2YQ==",
+    note: "Quick + affordable but very average taste",
+  },
 ];
