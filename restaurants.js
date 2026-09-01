@@ -30,6 +30,12 @@
 
 const RESTAURANTS = [
   {
+    name: "Zingerman's Deli",
+    tier: "mid",
+    instagramUrl: "temp",
+    note: "Expensive and used to be better",
+  },
+  {
     name: "No Thai",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/DcpL3pXS2Oa/?utm_source=ig_web_copy_link&igsi=NTc4MTIwNjQ2YQ==",

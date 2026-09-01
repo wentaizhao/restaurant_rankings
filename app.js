@@ -61,8 +61,10 @@
 
     item.append(rankChip, body);
 
-    // Tapping anywhere on the card opens the Instagram review.
-    if (typeof r.instagramUrl === "string" && r.instagramUrl.trim() !== "") {
+    // Tapping anywhere on the card opens the Instagram review. Anything that
+    // isn't a real http(s) link (blank, "temp", a placeholder) is ignored so
+    // the card never links somewhere broken.
+    if (typeof r.instagramUrl === "string" && /^https?:\/\//i.test(r.instagramUrl.trim())) {
       const cover = document.createElement("a");
       cover.className = "card-cover";
       cover.href = r.instagramUrl;
