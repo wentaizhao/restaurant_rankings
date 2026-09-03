@@ -33,13 +33,19 @@ const RESTAURANTS = [
     name: "Rich J.C.",
     tier: "tuff",
     instagramUrl: "https://www.instagram.com/p/DcztgxgEc4q/",
-    note: "Good homey Korean food that always hits the spot",
+    note: "Good homey Korean food",
   },
   {
     name: "Zingerman's Deli",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dcuzf7zFVhI/",
     note: "Expensive and used to be better",
+  },
+  {
+    name: "Lan City Noodle Bar",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DczvIj2EdKP/",
+    note: "Quick eats and respectable price, mid tho",
   },
   {
     name: "No Thai",
