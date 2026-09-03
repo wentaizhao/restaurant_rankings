@@ -36,6 +36,12 @@ const RESTAURANTS = [
     note: "Good homey Korean food",
   },
   {
+    name: "KPOT",
+    tier: "tuff",
+    instagramUrl: "https://www.instagram.com/p/DczwSmokVtr/",
+    note: "Expensive, but AYCE clears",
+  },
+  {
     name: "Zingerman's Deli",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dcuzf7zFVhI/",
