@@ -30,6 +30,12 @@
 
 const RESTAURANTS = [
   {
+    name: "Rich J.C.",
+    tier: "tuff",
+    instagramUrl: "https://www.instagram.com/p/DcztgxgEc4q/",
+    note: "Good homey Korean food that always hits the spot",
+  },
+  {
     name: "Zingerman's Deli",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dcuzf7zFVhI/",
