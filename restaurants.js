@@ -51,12 +51,12 @@ const RESTAURANTS = [
     name: "Lan City Noodle Bar",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/DczvIj2EdKP/",
-    note: "Quick eats and respectable price, mid tho",
+    note: "Quick eats and ok prices, mid",
   },
   {
     name: "No Thai",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/DcpL3pXS2Oa/",
-    note: "Quick + affordable but very average taste",
+    note: "Quick, affordable but average",
   },
 ];
