@@ -42,6 +42,12 @@ const RESTAURANTS = [
     note: "Expensive, but AYCE clears",
   },
   {
+    name: "Slurping Turtle",
+    tier: "mid",
+    instagramUrl: "temp",
+    note: "Solid taste but overpriced",
+  },
+  {
     name: "Zingerman's Deli",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dcuzf7zFVhI/",
