@@ -65,4 +65,10 @@ const RESTAURANTS = [
     instagramUrl: "https://www.instagram.com/p/DcpL3pXS2Oa/",
     note: "Quick, affordable but average",
   },
+  {
+    name: "Good Time Charley's",
+    tier: "fade",
+    instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/?stkn=MTI4dHdjYTBqcmJsNw==",
+    note: "Mid bar food, but close to Rick's",
+  },
 ];
