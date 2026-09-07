@@ -44,7 +44,7 @@ const RESTAURANTS = [
   {
     name: "Slurping Turtle",
     tier: "mid",
-    instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/",
+    instagramUrl: "https://www.instagram.com/p/Dc4RR7bFLc6/",
     note: "Solid taste but overpriced",
   },
   {
