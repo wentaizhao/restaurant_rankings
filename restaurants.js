@@ -44,7 +44,7 @@ const RESTAURANTS = [
   {
     name: "Slurping Turtle",
     tier: "mid",
-    instagramUrl: "temp",
+    instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/",
     note: "Solid taste but overpriced",
   },
   {
@@ -52,6 +52,18 @@ const RESTAURANTS = [
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dcuzf7zFVhI/",
     note: "Expensive and used to be better",
+  },
+  {
+    name: "Pretzel Bell",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/Dc_padUFL5c/",
+    note: "Worth it for happy hour",
+  },
+  {
+    name: "Halal Bros",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/Dc_4tn_lGzH/",
+    note: "Solid, no bs spot",
   },
   {
     name: "Lan City Noodle Bar",
@@ -68,7 +80,7 @@ const RESTAURANTS = [
   {
     name: "Good Time Charley's",
     tier: "fade",
-    instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/?stkn=MTI4dHdjYTBqcmJsNw==",
+    instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/",
     note: "Mid bar food, but close to Rick's",
   },
 ];
