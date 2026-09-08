@@ -36,6 +36,12 @@ const RESTAURANTS = [
     note: "Good homey Korean food",
   },
   {
+    name: "Paris Banh Mi",
+    tier: "tuff",
+    instagramUrl: "https://www.instagram.com/p/DdCWd9MlHoo/?stkn=dnJkNGd3dWc1azZk",
+    note: "A little expensive but worth",
+  },
+  {
     name: "KPOT",
     tier: "tuff",
     instagramUrl: "https://www.instagram.com/p/DczwSmokVtr/",
