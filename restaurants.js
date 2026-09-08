@@ -60,6 +60,12 @@ const RESTAURANTS = [
     note: "Expensive and used to be better",
   },
   {
+    name: "Sadako Japanese Restaurant",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DdCZxtjFJ2I/?stkn=eWd0cWFrbW90Zm8y",
+    note: "come here if desparate 😂",
+  },
+  {
     name: "Pretzel Bell",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dc_padUFL5c/",
