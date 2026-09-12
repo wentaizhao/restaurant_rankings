@@ -72,6 +72,12 @@ const RESTAURANTS = [
     note: "Worth it for happy hour",
   },
   {
+    name: "New York Pizza Depot",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DdNCjX7lLCb/?stkn=c3U0ejJoYW84aDYx",
+    note: "Lotta variety, good tues deal",
+  },
+  {
     name: "Halal Bros",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dc_4tn_lGzH/",
