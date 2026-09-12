@@ -84,6 +84,12 @@ const RESTAURANTS = [
     note: "Solid, no bs spot",
   },
   {
+    name: "Jasmine Bubble Tea and Eatery",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DdND7FcFMrb/?img_index=2&stkn=MWxscDl5ZnpwZG5yZg==",
+    note: "Small portions, solid",
+  },
+  {
     name: "Lan City Noodle Bar",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/DczvIj2EdKP/",
