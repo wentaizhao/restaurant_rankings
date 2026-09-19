@@ -32,7 +32,7 @@ const RESTAURANTS = [
   {
     name: "Bewon",
     tier: "tuff",
-    instagramUrl: "",
+    instagramUrl: "https://www.instagram.com/p/DddOTpklbC4/",
     note: "Gas but a bit off campus",
   },
   {
@@ -42,9 +42,15 @@ const RESTAURANTS = [
     note: "Good homey Korean food",
   },
   {
+    name: "Maize and Blue Deli",
+    tier: "tuff",
+    instagramUrl: "https://www.instagram.com/p/Dde1ICklJZC/",
+    note: "Underrated AF",
+  },
+  {
     name: "Paris Banh Mi",
     tier: "tuff",
-    instagramUrl: "https://www.instagram.com/p/DdCWd9MlHoo/?stkn=dnJkNGd3dWc1azZk",
+    instagramUrl: "https://www.instagram.com/p/DdCWd9MlHoo/",
     note: "A little expensive but worth",
   },
   {
@@ -68,7 +74,7 @@ const RESTAURANTS = [
   {
     name: "Sadako Japanese Restaurant",
     tier: "mid",
-    instagramUrl: "https://www.instagram.com/p/DdCZxtjFJ2I/?stkn=eWd0cWFrbW90Zm8y",
+    instagramUrl: "https://www.instagram.com/p/DdCZxtjFJ2I/",
     note: "come here if desparate 😂",
   },
   {
@@ -80,13 +86,13 @@ const RESTAURANTS = [
   {
     name: "New York Pizza Depot",
     tier: "mid",
-    instagramUrl: "https://www.instagram.com/p/DdNCjX7lLCb/?stkn=c3U0ejJoYW84aDYx",
+    instagramUrl: "https://www.instagram.com/p/DdNCjX7lLCb/",
     note: "Lotta variety, good tues deal",
   },
   {
     name: "Mr. Spots",
     tier: "mid",
-    instagramUrl: "",
+    instagramUrl: "https://www.instagram.com/p/DddNmOrFYnM/",
     note: "Close enough to ones from Philly",
   },
   {
@@ -98,7 +104,7 @@ const RESTAURANTS = [
   {
     name: "Jasmine Bubble Tea and Eatery",
     tier: "mid",
-    instagramUrl: "https://www.instagram.com/p/DdND7FcFMrb/?img_index=2&stkn=MWxscDl5ZnpwZG5yZg==",
+    instagramUrl: "https://www.instagram.com/p/DdND7FcFMrb/",
     note: "Small portions, solid",
   },
   {
@@ -122,7 +128,7 @@ const RESTAURANTS = [
   {
     name: "Pizza Bob's",
     tier: "fade",
-    instagramUrl: "",
+    instagramUrl: "https://www.instagram.com/p/DddOmnglV-1/",
     note: "Disappointment",
   },
 ];
