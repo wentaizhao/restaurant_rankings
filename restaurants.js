@@ -30,6 +30,12 @@
 
 const RESTAURANTS = [
   {
+    name: "Bewon",
+    tier: "tuff",
+    instagramUrl: "",
+    note: "Gas but a bit off campus",
+  },
+  {
     name: "Rich J.C.",
     tier: "tuff",
     instagramUrl: "https://www.instagram.com/p/DcztgxgEc4q/",
@@ -78,6 +84,12 @@ const RESTAURANTS = [
     note: "Lotta variety, good tues deal",
   },
   {
+    name: "Mr. Spots",
+    tier: "mid",
+    instagramUrl: "",
+    note: "Close enough to ones from Philly",
+  },
+  {
     name: "Halal Bros",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dc_4tn_lGzH/",
@@ -106,5 +118,11 @@ const RESTAURANTS = [
     tier: "fade",
     instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/",
     note: "Mid bar food, but close to Rick's",
+  },
+  {
+    name: "Pizza Bob's",
+    tier: "fade",
+    instagramUrl: "",
+    note: "Disappointment",
   },
 ];
