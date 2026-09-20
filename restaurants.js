@@ -66,6 +66,12 @@ const RESTAURANTS = [
     note: "Solid taste but overpriced",
   },
   {
+    name: "Bodega Bros",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DdhHZA7FUxa/?stkn=eWQxbzB1aXd1a2dx",
+    note: "Tuff but supports Cam Hendrix",
+  },
+  {
     name: "Zingerman's Deli",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/Dcuzf7zFVhI/",
