@@ -78,6 +78,12 @@ const RESTAURANTS = [
     note: "Expensive and used to be better",
   },
   {
+    name: "Noori Chicken",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DdkLPdflKWV/",
+    note: "Stick to chicken to be safe, otherwise you're gambling",
+  },
+  {
     name: "Sadako Japanese Restaurant",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/DdCZxtjFJ2I/",
