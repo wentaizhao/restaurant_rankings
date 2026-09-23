@@ -72,6 +72,12 @@ const RESTAURANTS = [
     note: "Solid taste but overpriced",
   },
   {
+    name: "Totoro",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/Ddoq0yTlDfF/?stkn=MTkxOTJld2R2ZnBtYQ==",
+    note: "Solid sushi, but def better options",
+  },
+  {
     name: "Bodega Bros",
     tier: "mid",
     instagramUrl: "https://www.instagram.com/p/DdhHZA7FUxa/?stkn=eWQxbzB1aXd1a2dx",
