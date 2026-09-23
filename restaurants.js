@@ -42,6 +42,12 @@ const RESTAURANTS = [
     note: "Good homey Korean food",
   },
   {
+    name: "Jamaican Jerk Pit",
+    tier: "tuff",
+    instagramUrl: "https://www.instagram.com/p/DdnG2tZFK0a/?img_index=3&stkn=bmVmZm14a2plMmIy",
+    note: "Reliably gas",
+  },
+  {
     name: "Maize and Blue Deli",
     tier: "tuff",
     instagramUrl: "https://www.instagram.com/p/Dde1ICklJZC/",
