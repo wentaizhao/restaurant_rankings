@@ -80,8 +80,14 @@ const RESTAURANTS = [
   {
     name: "Bodega Bros",
     tier: "mid",
-    instagramUrl: "https://www.instagram.com/p/DdhHZA7FUxa/?stkn=eWQxbzB1aXd1a2dx",
+    instagramUrl: "https://www.instagram.com/p/DdhHZA7FUxa/",
     note: "Tuff but supports Cam Hendrix",
+  },
+  {
+    name: "Hola Seoul",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DeALxyOlEOc/",
+    note: "Best protein/dollar meal on campus",
   },
   {
     name: "Zingerman's Deli",
