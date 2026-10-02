@@ -30,6 +30,12 @@
 
 const RESTAURANTS = [
   {
+    name: "Mani Osteria and Bar",
+    tier: "tuff",
+    instagramUrl: "https://www.instagram.com/p/DeAaOMSFEPL/?stkn=bXZxYXRqaTBrMmlo",
+    note: "Class, easily a top choice",
+  },
+  {
     name: "Bewon",
     tier: "tuff",
     instagramUrl: "https://www.instagram.com/p/DddOTpklbC4/",
