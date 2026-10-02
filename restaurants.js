@@ -156,6 +156,12 @@ const RESTAURANTS = [
     note: "Quick, affordable but average",
   },
   {
+    name: "Red Lobster",
+    tier: "mid",
+    instagramUrl: "https://www.instagram.com/p/DeAbnn3lHjX/?stkn=ZjJqaThqbzR6a3pv",
+    note: "AYCE, but it's rough",
+  },
+  {
     name: "Good Time Charley's",
     tier: "fade",
     instagramUrl: "https://www.instagram.com/p/Dc6qyERFIpK/",
